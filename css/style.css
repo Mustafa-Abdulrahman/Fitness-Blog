@@ -1,0 +1,364 @@
+:root{
+    --main-color:#000
+}
+/* h1,h2,h3,h4,h5,h6{
+    margin:0
+} */
+*{
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+-o-box-sizing: border-box;
+box-sizing: border-box;
+}
+.parent{
+    background-color:#ddd
+}
+
+html{
+    font-family: 'Spartan', sans-serif;
+}
+.container{
+    margin:0 auto;
+    width:1170px
+}
+
+.parents{
+    position:relative
+}
+
+/* start navbar */
+.navbar{
+    font-size:18px;
+    color:white;
+    background-color:var(--main-color);
+    display:flex;
+    position:sticky;
+    top:0
+
+}
+.navbar a{
+    text-decoration:none;
+    color:white;
+    padding:10px
+   
+    
+}
+.navbar .right{
+    padding:10px 0;
+    flex:1;
+    text-align:right
+}
+.navbar a:hover{
+    background-color:white;
+    color:var(--main-color)
+}
+
+
+/* end navbar */
+
+/* start header */
+.header .container .text-one{
+    text-align:center;
+    padding-top:30px;
+    padding-bottom:30px;
+    background-color:white
+}
+.header .container .text-one span{
+    
+    background-color:var(--main-color);
+    color:white;
+    padding:7px 12px;
+    border-radius:5px
+}
+
+.header .container .cover{
+    background-image:url('../images/no-gym-no-problem-raising-the-bar-fitness-opbj3luwo4tu2gvare0bh284ioy5purcr9duy1j3a0.jpg');
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+    height:650px;
+    width:100%;
+    display:flex;
+    align-items: center;
+    animation-name:cover-change;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-direction:alternate
+}
+.header .container .cover .text{
+    color:white;
+    padding:10px
+}
+.header .container .cover .text h1{
+    margin-bottom: 0;
+}
+.header .container .cover .text p{
+    margin-top:15px;
+    display:inline-block;
+    font-weight:500;
+    padding:15px;
+    background-color:white;
+    color:var(--main-color);
+    opacity:0.5;
+    letter-spacing: -1px;
+    cursor:pointer
+}
+.header .container .cover .text p:hover{
+    opacity: 1;
+}
+
+@keyframes cover-change {
+    0%{
+        background-image:url('../images/no-gym-no-problem-raising-the-bar-fitness-opbj3luwo4tu2gvare0bh284ioy5purcr9duy1j3a0.jpg');
+    }
+    20%{
+        background-image:url('../images/no-gym-no-problem-raising-the-bar-fitness-opbj3luwo4tu2gvare0bh284ioy5purcr9duy1j3a0.jpg');
+    }
+    25%{
+        background-image:url('../images/image1.jpg');
+    }
+    45%{
+        background-image:url('../images/image1.jpg');
+    }
+    50%{
+        background-image:url('../images/wellreservedeventNAO(46of132).jpg');
+    }
+    70%{
+        background-image:url('../images/wellreservedeventNAO(46of132).jpg');
+    }
+    75%{
+        background-image:url('../images/What-Is-Cardio1-1-1200x600.jpg');
+    }
+    100%{
+        background-image:url('../images/What-Is-Cardio1-1-1200x600.jpg');
+    }
+    
+}
+/* end header */
+
+/* start main  */
+ 
+.main .container{
+    padding:20px;
+    border-left:2px solid black;
+    border-right:2px solid black;
+    display:flex;
+    flex-flow:row nowrap;
+}
+
+.main .container .body{
+    flex:calc(70% - 20px);
+    margin-right:25px
+}
+.main .container .aside{
+    flex:30%
+}
+
+.main .container .aside .profile{
+    background-color:var(--main-color)
+}
+
+.main .container .aside .profile img{
+width:100%
+}
+.main .container .aside .profile .text{
+padding:10px;
+color:white;
+
+}
+.main .container .aside .profile .text h3{
+margin-top:0
+
+}
+.main .container .aside .box{
+    margin-top:30px;
+    background-color:white;
+    width:100%
+   
+}
+
+.main .container .aside .box h4{
+    margin:0;
+    background-color:var(--main-color);
+    color:white;
+    padding: 20px 10px
+
+}
+.main .container .aside .box .posts{
+    padding:10px;
+    display:flex;
+    
+}
+.main .container .aside .box .posts .mage{
+    flex:30%;
+    text-align:center
+
+    
+}
+.main .container .aside .box .posts .mage img{
+   width:80%;
+   height:100px
+    
+}
+
+hr{
+    margin:0
+}
+
+.main .container .aside .box .posts .text{
+    flex:70%;
+    padding-left:10px;
+    display:flex;
+    flex-flow:wrap;
+    align-content: center;
+}
+.box .posts .text h5,
+.main .container .aside .box .posts .text p{
+    margin: 5px 0;
+    flex:100%;
+    font-size:1.2em
+}
+ .box .posts .text h5{
+    font-weight:900;
+}
+
+.main .container .aside .box .image{
+width:100%;
+padding:10px
+}
+.main .container .aside .box .image img{
+width:100%
+}
+.main .container .aside .box .image p{
+    display:inline-block;
+    margin-left:5px;
+    background-color:#eee;
+    padding:5px
+}
+.main .container .aside .box .image p:first-child{
+    
+    background-color:var(--main-color);
+    color:white
+}
+.main .container .aside .box:nth-child(4) p:hover{
+background-color:var(--main-color);
+color:white;
+cursor:pointer
+}
+.main .container .aside .box:nth-child(5) .image{
+    display:flex;
+    flex-flow:row wrap;
+    padding-left:0
+}
+.main .container .aside .box:nth-child(5) .image img{
+    
+    width:calc(50% - 10px);
+    margin-left:10px;
+    margin-top:10px
+}
+.main .container .aside .box:nth-child(6) .image a {
+    color:black
+}
+.main .container .aside .box:nth-child(7) .image  {
+    text-align:center
+}
+.main .container .aside .box:nth-child(7) .image p {
+    color:black;
+    font-size:10px;
+    background-color:white
+}
+.main .container .aside .box:nth-child(7) .image input{
+    width:100%;
+    padding:5px;
+    font-size:10px
+}
+.main .container .aside .box:nth-child(7) .image p:last-child{
+    width:100%;
+    color:white;
+    padding:10px;
+    text-align:center;
+    font-weight:bolder;
+    background-color:rgb(211, 36, 36);
+    margin-left:0
+}
+.main .container .aside .box:nth-child(7) .image p:last-child:hover{
+    background-color:red;
+}
+/* end main  */
+/* start body  */
+.main .container .body .box{
+    background-color:white;
+    color:black;
+    padding:10px;
+    margin-bottom:25px
+}
+.main .container .body .box .text{
+    text-align:center
+}
+.main .container .body .box .buttons{
+    display:flex;
+    justify-content:space-between
+}
+.main .container .body .box .buttons span{
+    padding:10px 20px;
+    font-weight:600;
+    background-color:black;
+    color:white
+}
+.main .container .body .box .buttons span:hover{
+    background-color:white;
+    color:black;
+    border:1px solid black 
+    
+}
+.main .container .body .box .buttons span:last-child{
+    padding:10px 20px;
+    font-weight:600;
+    background-color:white;
+    color:black;
+    border:1px solid black
+}
+.main .container .body .box .buttons span:last-child:hover{
+    
+    background-color:rgb(207, 59, 59);
+    color:black
+    
+}
+/* end body  */
+.footer{
+    background-color:rgb(110, 107, 107);
+    color:white;
+    padding:25px;
+}
+.footer a{
+    text-decoration:none;
+    color:white;
+    padding:10px;
+    background-color:var(--main-color);
+    margin-top:30px
+}
+
+.footer .text{
+    padding-top:30px
+}
+
+@media (max-width:1200px) {
+    .container{
+        width:1170px
+    }
+}
+@media (max-width:992px) {
+    .container{
+        width:930px
+    }
+}
+@media (max-width:778px) {
+    .container{
+        width:750px
+    }
+}
+@media (max-width:500px) {
+    .container{
+        width:430px
+    }
+}
